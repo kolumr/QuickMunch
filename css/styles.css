@@ -1,7 +1,7 @@
 body{
   margin: 0em;
   padding: 0em;
-  background-color:grey;
+  background-color:rgb(147, 247, 122);
 }
 
 .welcome{
@@ -51,7 +51,13 @@ h1{
   margin-top:50px ;
 }
 .amount{
-  color: blueviolet;
+  color: #f7610a;
+}
+.card{
+  background:white;
+  height: 250px;
+  width: 400px;
+
 }
 
 
