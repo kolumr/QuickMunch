@@ -37,12 +37,12 @@ function getData(){
     break;
     }
   }
-  // const pizza1 = new Pizza(size,crust,topping);
-  // addToCart(); 
-  // function addToCart(){
-  //   alert(JSON.stringify(pizza1));
+  const pizza1 = new Pizza(size,crust,topping);
+  addToCart(); 
+  function addToCart(){
+    alert(JSON.stringify(pizza1));
 
-  // }
+  }
 };
 function Pizza(size,crust,topping){
   this.size1 = size;
