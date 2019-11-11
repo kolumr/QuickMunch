@@ -44,11 +44,11 @@ function getData(){
 
   // }
 };
-// function Pizza(size,crust,topping){
-//   this.size1 = size;
-//   this.crust1 = crust;
-//   this.topping1 = topping;
+function Pizza(size,crust,topping){
+  this.size1 = size;
+  this.crust1 = crust;
+  this.topping1 = topping;
   
-// }
+}
 
 
