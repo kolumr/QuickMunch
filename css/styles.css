@@ -46,8 +46,9 @@ h1{
   margin: 4px solid blue;
   float: left;
 }
-.food{
+.cart{
   float: right;
+  margin-top:50px ;
 }
 
 
