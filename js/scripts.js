@@ -1,30 +1,33 @@
 
 function getData(){
+  var total = 0;
   var radioSize = document.getElementsByName("pizza_size");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
     if (radioSize[i].checked)
     {
-      alert(radioSize[i].value);
+      // alert(radioSize[i].value);
     break;
     }
   }
-  var radioSize = document.getElementsByName("crust");
+  var radioCrust = document.getElementsByName("crust");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
-    if (radioSize[i].checked)
+    if (radioCrus[i].checked)
     {
-      alert(radioSize[i].value);
+      alert(radioCrust[i].value);
     break;
     }
   }
-  var radioSize = document.getElementsByName("topping");
+  var radioTopping = document.getElementsByName("topping");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
-    if (radioSize[i].checked)
+    if (radioTopping[i].checked)
     {
-      alert(radioSize[i].value);
+      alert(radioTopping[i].value);
     break;
     }
   }
+  total = radioSize[i].checked.value + radioCrust[i].checked.value + radioTopping.checked.value
+  alert(total);
 };

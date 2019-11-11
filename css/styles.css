@@ -46,10 +46,7 @@ h1{
   margin: 4px solid blue;
   float: left;
 }
-.cart{
-  float: right;
-  margin-top:50px ;
-}
+
 .amount{
   color: #f7610a;
 }
@@ -59,5 +56,13 @@ h1{
   width: 400px;
 
 }
-
+.cartb{
+  float: left;
+  margin-left: 0%;
+}
+.cart{
+  /* float: right; */
+  margin-top:50px ;
+  width: 700px;
+}
 
