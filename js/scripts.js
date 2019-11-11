@@ -1,21 +1,28 @@
 
 function getData(){
   var total = 0;
+  var size =0;
+  var crust = 0;
+  var topping = 0;
   var radioSize = document.getElementsByName("pizza_size");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
     if (radioSize[i].checked)
     {
-      // alert(radioSize[i].value);
+      size = parseInt(radioSize[i].value)
+      total = total +  size
+      alert(total);
     break;
     }
   }
   var radioCrust = document.getElementsByName("crust");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
-    if (radioCrus[i].checked)
+    if (radioCrust[i].checked)
     {
-      alert(radioCrust[i].value);
+      crust = parseInt(radioCrust[i].value)
+      total = total + crust;
+      alert(total);
     break;
     }
   }
@@ -24,10 +31,24 @@ function getData(){
   {
     if (radioTopping[i].checked)
     {
-      alert(radioTopping[i].value);
+      topping = parseInt(radioTopping[i].value)
+      total = total +  topping
+      alert(total);
     break;
     }
   }
-  total = radioSize[i].checked.value + radioCrust[i].checked.value + radioTopping.checked.value
-  alert(total);
+  // const pizza1 = new Pizza(size,crust,topping);
+  // addToCart(); 
+  // function addToCart(){
+  //   alert(JSON.stringify(pizza1));
+
+  // }
 };
+// function Pizza(size,crust,topping){
+//   this.size1 = size;
+//   this.crust1 = crust;
+//   this.topping1 = topping;
+  
+// }
+
+
