@@ -40,8 +40,32 @@ function getData(){
   const pizza1 = new Pizza(size,crust,topping);
   addToCart(); 
   function addToCart(){
-    alert(JSON.stringify(pizza1));
-
+    // const parray = JSON.stringify(pizza1);
+    alert(pizza1.size1);
+    if(pizza1.size1 === 1200){
+      var pizza_size = "Large";
+      alert(pizza_size);
+    }
+    else if(pizza1.size1 === 900){
+      pizza_size = "Medium";
+      alert(pizza_size);
+    }
+    else{
+      pizza_size = "Small";
+      alert(pizza_size);
+    }
+    if(pizza1.crust1 === 1200){
+      var pizza_size = "Large";
+      alert(pizza_size);
+    }
+    else if(pizza1.size1 === 900){
+      pizza_size = "Medium";
+      alert(pizza_size);
+    }
+    else{
+      pizza_size = "Small";
+      alert(pizza_size);
+    }
   }
 };
 function Pizza(size,crust,topping){
