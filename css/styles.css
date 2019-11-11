@@ -46,5 +46,8 @@ h1{
   margin: 4px solid blue;
   float: left;
 }
+.food{
+  float: right;
+}
 
 
