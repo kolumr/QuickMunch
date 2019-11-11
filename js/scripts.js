@@ -9,9 +9,7 @@ function getData(){
   {
     if (radioSize[i].checked)
     {
-      size = parseInt(radioSize[i].value)
-      total = total +  size
-      alert(total);
+      size = radioSize[i].value
     break;
     }
   }
@@ -20,9 +18,7 @@ function getData(){
   {
     if (radioCrust[i].checked)
     {
-      crust = parseInt(radioCrust[i].value)
-      total = total + crust;
-      alert(total);
+      crust = radioCrust[i].value
     break;
     }
   }
@@ -31,9 +27,7 @@ function getData(){
   {
     if (radioTopping[i].checked)
     {
-      topping = parseInt(radioTopping[i].value)
-      total = total +  topping
-      alert(total);
+      topping = radioTopping[i].value
     break;
     }
   }
@@ -42,16 +36,16 @@ function getData(){
   function addToCart(){
     // const parray = JSON.stringify(pizza1);
     alert(pizza1.size1);
-    if(pizza1.size1 === 1200){
-      var pizza_size = "Large";
+    if(pizza1.size1 === "Large"){
+      var pizza_size = 1200;
       alert(pizza_size);
     }
-    else if(pizza1.size1 === 900){
-      pizza_size = "Medium";
+    else if(pizza1.size1 === "Medium"){
+      pizza_size = 900;
       alert(pizza_size);
     }
     else{
-      pizza_size = "Small";
+      pizza_size = 700;
       alert(pizza_size);
     }
     if(pizza1.crust1 === 1200){
