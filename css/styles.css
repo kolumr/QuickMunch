@@ -1,7 +1,7 @@
 body{
   margin: 0em;
   padding: 0em;
-  background-color: rgb(7, 7, 7);
+  background-color:grey;
 }
 
 .welcome{
@@ -9,7 +9,7 @@ body{
   /* padding: 0em; */
   
 }
-.container-fluid{
+.container{
   margin: 0em;
   padding: 0em;
 }
@@ -46,3 +46,5 @@ h1{
   margin: 4px solid blue;
   float: left;
 }
+
+
