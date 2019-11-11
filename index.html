@@ -18,7 +18,7 @@
       <div class = "cont">
         <h2>WELCOME</h2>
         <h2>to</h2>
-        <!-- <i class="fas fa-pizza-slice"></i> -->
+        <i class="fas fa-pizza-slice"></i>
         <h1>Quick<span id="gr_color">Munch</span></h1>
         
         <h2 id=""><em>Au revoir to munchies</em></h2>
@@ -39,19 +39,19 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio1" value="option1" checked>
                 <label class="form-check-label" for="exampleRadios1">
-                  Large
+                  Large : <span class="amount"> ksh 1200/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio2" value="option2">
                 <label class="form-check-label" for="exampleRadios2">
-                  Medium
+                  Medium : <span class="amount"> ksh 900/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Small
+                  Small : <span class="amount"> ksh 700/=</span>
                 </label>
               </div>
             </form>  
@@ -65,31 +65,31 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio1" value="option1" checked>
                 <label class="form-check-label" for="exampleRadios1">
-                  Thin crust
+                  Thin crust : <span class="amount"> ksh 150/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio2" value="option2">
                 <label class="form-check-label" for="exampleRadios2">
-                  Thick crust
+                  Thick crust : <span class="amount"> ksh 250/=</span>
                 </label>
               </div>
               <div class="form-check ">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Deep crust
+                  Deep crust : <span class="amount"> ksh 300/=</span>
                 </label>
               </div>
               <div class="form-check ">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Cheese filled crust
+                  Cheese filled crust : <span class="amount"> ksh 250/=</span>
                 </label>
               </div>
               <div class="form-check ">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Stuffed crust
+                  Stuffed crust : <span class="amount"> ksh 250/=</span>
                 </label>
               </div>
             </form>  
@@ -103,43 +103,43 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio1" value="option1" checked>
                 <label class="form-check-label" for="exampleRadios1">
-                  Onions
+                  Onions : <span class="amount"> ksh 150/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio2" value="option2">
                 <label class="form-check-label" for="exampleRadios2">
-                  Sausage
+                  Sausage : <span class="amount"> ksh 200/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Bacon
+                  Bacon : <span class="amount"> ksh 250/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Extra cheese
+                  Extra cheese : <span class="amount"> ksh 300/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Pineapple
+                  Pineapple : <span class="amount"> ksh 200/=</span>
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="pizza_size" id="Radio3" value="option3">
                 <label class="form-check-label" for="exampleRadios3">
-                  Spinach
+                  Spinach : <span class="amount"> ksh 100/=</span>
                 </label>
               </div>
             </form>  
           </div>
         </div>
-        <button type="button" class="btn btn-dark ml-4">Add to cart</button>
+        <button type="button" onclick="getData()" class="btn btn-dark ml-4">Add to cart</button>
       </div>
       <div class="col-md-4 cart ">
         <div class="card">
@@ -148,7 +148,7 @@
             <p class="list"></p>
             
           </div>
-          <button type="button" class="btn btn-dark ml-4">Place order</button>
+          <button type="submit" value="psize" class="btn btn-dark ml-4">Place order</button>
         </div>
       </div>
       
