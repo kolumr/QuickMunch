@@ -21,7 +21,7 @@ function getData(){
     if (radioCrust[i].checked)
     {
       crust = radioCrust[i].value
-      alert(crust)
+     
     break;
     }
   }
@@ -104,7 +104,7 @@ function getData(){
     grandTotal = number +grandTotal;
   
   });
-  alert(grandTotal);
+  
 };
 function Pizza(size,crust,topping,orderNo,total){
   this.size1 = size;
@@ -115,7 +115,17 @@ function Pizza(size,crust,topping,orderNo,total){
   
 };
 clicks = 0;
-$("button").click(function () {
-  clicks++;
-  addToCart();
-})
+
+  
+
+  $("#porder").click(function () {
+    var message = confirm("Would you like it to be delivered at an extra cost of 200?")
+    if (message == true){
+      newTotal = grandTotal +200;
+      var location = prompt("Enter your location")
+      alert("Your food will be delivered to " + location +". Total cost is" + newTotal)
+    }
+    else{
+      alert("Your food will cost you " + grandTotal)
+    }
+  });
