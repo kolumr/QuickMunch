@@ -1,10 +1,11 @@
-
+numbers = [];
 function getData(){
   var total = 0;
   var size =0;
   var crust = 0;
   var topping = 0;
   orderNo = 1;
+  grandTotal = 0;
   var radioSize = document.getElementsByName("pizza_size");
   for (var i = 0, length = radioSize.length; i < length; i++)
   {
@@ -15,7 +16,7 @@ function getData(){
     }
   }
   var radioCrust = document.getElementsByName("crust");
-  for (var i = 0, length = radioSize.length; i < length; i++)
+  for (var i = 0, length = radioCrust.length; i < length; i++)
   {
     if (radioCrust[i].checked)
     {
@@ -25,7 +26,7 @@ function getData(){
     }
   }
   var radioTopping = document.getElementsByName("topping");
-  for (var i = 0, length = radioSize.length; i < length; i++)
+  for (var i = 0, length = radioTopping.length; i < length; i++)
   {
     if (radioTopping[i].checked)
     {
@@ -74,11 +75,13 @@ function getData(){
       
     }
     else{
-      alert("choose crust ")
+      pizza_crust = 250;
+      total += pizza_crust;
     }
     if(pizza1.topping1 === "Onions"){
       pizza_topping = 150;
       total += pizza_topping;
+      
       
     }
     else if(pizza1.topping1 === "Sausage"){
@@ -94,7 +97,14 @@ function getData(){
     }
     orderNo =orderNo + 1 ;
       $("#pizza").append('<tr><th scope="row">'  + pizza1.size1 + '</th><td id="crust">'   + pizza1.crust1 +'</th><td id="topping">'+ pizza1.topping1 + '</th><td id="total">' + total + `</th>`); 
-}
+    
+    numbers.push(total);
+  }
+  numbers.forEach(number => {
+    grandTotal = number +grandTotal;
+  
+  });
+  alert(grandTotal);
 };
 function Pizza(size,crust,topping,orderNo,total){
   this.size1 = size;
