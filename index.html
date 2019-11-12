@@ -69,7 +69,7 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="crust" id="cradio2" value="Thick crust ">
+                <input class="form-check-input" type="radio" name="crust" id="cradio2" value="Thick crust">
                 <label class="form-check-label" for="cradio2">
                   Thick crust : <span class="amount"> ksh 250/=</span>
                 </label>
@@ -118,16 +118,10 @@
                   Bacon : <span class="amount"> ksh 250/=</span>
                 </label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="topping" id="tradio4" value="Extra Cheese">
-                <label class="form-check-label" for="tradio4">
-                  Extra cheese : <span class="amount"> ksh 300/=</span>
-                </label>
-              </div>
             </form>  
           </div>
         </div>
-        <button type="button" onclick="getData()" class="btn btn-dark ml-4">Add to cart</button>
+        <button type="button" onclick="getData()" class="btn btn-dark ml-4" id="submit">Add to cart</button>
       </div>
       <div class="col-md-4 cartb ">
         <div class="card cart">
@@ -136,20 +130,13 @@
             <p class="list">
               <table class="table">
                 <thead>
-                  <th scope="col">Order No.</th>
+                  <!-- <th scope="col">Order No.</th> -->
                   <th scope="col">Pizza size</th>
                   <th scope="col">Crust</th>
                   <th scope="col">Toppings</th>
                   <th scope="col">Amount</th>
                 </thead>
                 <tbody id="pizza">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td id="size"></td>
-                    <td id="toppings"></td>
-                    <td id="crust"></td>
-                    <td id="total"></td>
-                  </tr>
                 </tbody>
               </table>
             </p>
