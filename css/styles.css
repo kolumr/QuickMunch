@@ -52,18 +52,23 @@ h1{
 }
 .card{
   background:white;
-  height: 250px;
+  height: 210px;
   width: 400px;
 
 }
 .cartb{
   float: left;
   margin-left: 0%;
+  
 }
 .cart{
   /* float: right; */
   margin-top:50px ;
-  width: 600px ;
+  width: 500px ;
   height: auto;
+  align-items: center;
+}
+.cart .card-body{
+  margin: 0em;
 }
 

@@ -99,12 +99,13 @@ function getData(){
       $("#pizza").append('<tr><th scope="row">'  + pizza1.size1 + '</th><td id="crust">'   + pizza1.crust1 +'</th><td id="topping">'+ pizza1.topping1 + '</th><td id="total">' + total + `</th>`); 
     
     numbers.push(total);
+    
   }
   numbers.forEach(number => {
     grandTotal = number +grandTotal;
   
   });
-  
+  document.getElementById("output").innerHTML = "   Total cost is " + grandTotal;
 };
 function Pizza(size,crust,topping,orderNo,total){
   this.size1 = size;
@@ -129,3 +130,4 @@ clicks = 0;
       alert("Your food will cost you " + grandTotal)
     }
   });
+  
